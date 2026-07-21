@@ -1,36 +1,129 @@
-# Sales & Inventory Management System
+# Laravel Role & Permission Management System
 
-A Laravel-based Sales and Inventory Management System designed to manage business operations efficiently. This system helps organizations manage customers, suppliers, products, purchases, sales, stock, accounts, and reports through a user-friendly interface.
+A Laravel-based Role and Permission Management System that allows administrators to manage users, roles, and permissions securely using the Spatie Laravel Permission package.
 
-## Features
+## 🚀 Features
 
-- User Authentication & Authorization
-- Role and Permission Management
-- Customer Management
-- Supplier Management
-- Product Management
-- Purchase Management
-- Sales Management
-- Stock Management
-- Inventory Tracking
-- Account Ledger
-- Profit & Loss Reports
-- Invoice Generation
-- PDF Reports
+- User Authentication
+- Role Management (Create, Update, Delete)
+- Permission Management
+- Assign Roles to Users
+- Assign Permissions to Roles
+- Role-based Access Control (RBAC)
+- Middleware Protection
+- Responsive Admin Interface
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- Laravel 13
-- PHP 8.3
+- Laravel
+- PHP
 - MySQL
-- Blade Template Engine
-- Bootstrap / Tailwind CSS
+- Bootstrap
+- Spatie Laravel Permission
+- HTML
+- CSS
 - JavaScript
-- Vite
 
-## Installation
+## 📦 Installation
 
-Clone the repository:
+### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/sales-inventory-management-system.git
+git clone https://github.com/your-username/role-permission-system.git
+```
+
+### Go to project directory
+
+```bash
+cd role-permission-system
+```
+
+### Install dependencies
+
+```bash
+composer install
+```
+
+```bash
+npm install
+```
+
+### Copy environment file
+
+```bash
+cp .env.example .env
+```
+
+### Generate application key
+
+```bash
+php artisan key:generate
+```
+
+### Configure database
+
+Update your `.env` file:
+
+```env
+DB_DATABASE=your_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### Run migrations
+
+```bash
+php artisan migrate
+```
+
+### Seed roles and permissions (if available)
+
+```bash
+php artisan db:seed
+```
+
+### Run the project
+
+```bash
+php artisan serve
+```
+
+Open:
+
+```
+http://127.0.0.1:8000
+```
+
+## 📁 Project Structure
+
+```
+app/
+routes/
+resources/
+database/
+public/
+```
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+- Login Page
+- Dashboard
+- User Management
+- Role Management
+- Permission Management
+
+## 📚 Package Used
+
+- Spatie Laravel Permission
+
+## 👩‍💻 Author
+
+**Samra Azhar**
+
+- GitHub: https://github.com/samraak
+
+## 📄 License
+
+This project is created for learning and portfolio purposes.
